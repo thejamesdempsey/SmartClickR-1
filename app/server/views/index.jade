@@ -1,6 +1,5 @@
 
 // Header Content //
-
 header
 	section#wrapper
 		#header-container
@@ -18,7 +17,7 @@ header
 									li: a(id='home', class='small', href='index') Home
 									li: a(id='features', href='features') Features
 									li: a(id='signup', href='signup') Sign Up
-									li: a(id='log', class='fancybox', href='/login') Log In
+									li: a(id='log', class='fancybox', href='#login') Log In
 				//end nav-wrapper
 				.clear
 		//end header container
@@ -133,10 +132,22 @@ footer
 		span
 			| ©
 			| SmartClickR Inc, All Rights Reserved
-				
 
+// Popup Login //			
+include modals/login
 
+script
+	$(document).foundationTopBar();
 
+script
+	$(document).ready(function() {
+		$("a.fancybox").fancybox({
+			scrolling: 'yes',
+			helpers : {
+				overlay : {closeClick: false}
+			}
+		});
+	});
 
 
 

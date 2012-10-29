@@ -20,7 +20,11 @@ module.exports = function(app) {
 
 
 // features page //
-
+	app.get('/features', function(request, response) {
+		// load the features page //
+		response.render('features.jade', {title: 'SmartClickR | Polling and Presentation Features'});
+		console.log(request.protocol);
+	});
 
 
 

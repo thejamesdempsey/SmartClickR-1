@@ -1,16 +1,28 @@
-// Login Page //
+// Login Modal //
 
-div(id='login-overlay', style='opacity: 0.75; display: block')
-	form(id='loginForm', onsubmit='#', method='post')
+div(id='login', style='opacity: 0.75; display: none; margin: 20px')
+	#login-wrapper
+	form(id='loginForm', method='post', action='#')
 		h1 Log In to Access Your Account, or
 			| a<href="signup"> Sign Up </a> to
 			| Create Polls Of Your Own
+		hr
 
 		fieldset
 			span.field
 				input(id='userEmail', type='input', class='required form-text', name='userEmail', title='Email Address', placeholder='Email Address', autocomplete='off')
+				.clear
 			span.field.password
 				input(id='userPassword', type='text', name='userPassword', class='required form-text', title='Password', placeholder="Password", autocomplete='off')
-
+				a(id='reset', href='#') Forgot Your Password?
+				.clear
+		hr
+		fieldset
+			label#rememberLabel
+				input(id='rememberCheckBox', name='remember_me', type="checkbox") Remember method
 		fieldset.form-action
-			input(type='submit', value='Submit')
+			input(id='login_submit', type='submit', value='Submit &rarr;')
+
+
+	
+	
