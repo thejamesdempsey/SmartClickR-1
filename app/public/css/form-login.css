@@ -1,0 +1,208 @@
+
+
+.clear{
+	clear: both;
+}
+.hidden{
+	display: none;
+}
+
+
+.left{
+	float: left;
+}
+
+ol li{
+	padding-bottom: 10px;
+}
+
+ul{
+	padding: 0;
+}
+
+ul li{
+	list-style-type: none;
+}
+
+form fieldset li label{
+	font-size: 1.10em;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover{
+	border-bottom: 1px dashed;
+	color: #9c6;
+}
+
+
+h4{
+	font-weight: normal;
+	font-size: 1.15em;
+}
+
+form fieldset {
+	margin: 0 0 5px 0;
+	font-size: 14px;
+	border: none;
+	}
+form fieldset.form-actions {
+	margin: 0 auto;
+	width: 100%;
+	}
+form fieldset label, form fieldset span {
+	display: block;
+	margin: 0 0 5px 0;
+	font-weight: normal;
+	font-size: 1.5em;
+	}
+form fieldset.check label {
+	display: inline;
+	font-weight: normal;
+	}
+form fieldset.radio ul li label, form fieldset.radio ul li span {
+	display: inline;
+	font-weight: normal;
+	}
+form fieldset input.form-text,
+form fieldset textarea {
+	display: block;
+	width: 98%;
+	padding: 10px;
+	font-size: 14px;
+	border: solid 1px #a6a196;
+	background: #ffffff;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+
+	}
+
+	
+form fieldset input.form-text#userPassword{
+	width: 66%;
+	float: left;
+}
+
+form fieldset input.form-text:focus {
+	border: 1px solid #ccc;
+	background: #fff;
+	}
+form fieldset textarea {
+	height: 150px;
+	}
+form fieldset select {
+	min-width: 25%;
+	margin: 0;
+	}
+form fieldset.radio ul {
+	margin-top: 5px;
+	}
+form fieldset.radio ul li {
+	margin: 0 0 5px 0;
+	}
+form fieldset.radio ul li:last-child {
+	margin: 0;
+	}
+form fieldset p.form-help {
+	margin: 5px 0 0 0;
+	font-size: 12px;
+	color: #999;
+	}
+form#loginForm input[type="submit"] {
+	margin-left: 3px;
+	width: 24%;
+	padding: 8px 30px;
+	font-size: 12px;	
+	font-weight: bold;
+	border: 1px solid #777;
+	background: #eee;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	text-align: center;
+	}
+form input[type="submit"]:hover,
+form input[type="submit"]:focus {
+	border: 1px solid #bbb;
+	background: #e5e5e5;
+	cursor: pointer;
+	}
+form input[type="submit"]:active {
+	border: 1px solid #ccc;
+	background: #eee;
+	}
+	
+	
+form#loginForm h1{
+	font-size:14px;
+}
+
+form a{
+	text-decoration: none;
+}
+form span{
+	width:100%;
+}
+
+.field{
+	background: #edeae3;
+	padding: 10px;
+	width: 97%;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-top: 12px;
+}
+form span a#reset{
+	font-size:13px;
+	float: left;
+	margin-top: 3%;
+	margin-left: 2%;
+	text-decoration: none;
+	color:#34373e;
+	-webkit-transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+}
+
+
+
+form span a#reset:hover{
+	border: none;
+	color: #67708f;
+	
+}
+
+form label.error{
+	font-size: 13px;
+	float: left;
+	width: 98%;
+	color: rgba(225, 0, 0, 0.68);
+	vertical-align: top
+}
+#rememberLabel{
+	width: 100%;
+	font-size: 1em;
+	float: right;
+}
+
+form fieldset .form-action{
+	float: left;
+}
+
+@media screen and (max-width: 620px){
+	form fieldset input.form-text#userPassword, form fieldset input.form-text#userEmail{
+		width: 100%;
+	}
+	form span a#reset{
+		margin-left: 0px;
+	}
+	form#loginForm input[type="submit"]{
+		width: 100%;
+	}
+}

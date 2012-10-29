@@ -1,0 +1,24 @@
+{
+	"name": "SmartClickR",
+	"version": "0.5.1",
+	"description": "A polling web app for ISAT capstone project",
+	"authors": {
+		"name1": "Daniel To",
+		"name2": "Jimmy Dempsey",
+		"name3": "Bradley Fischer",
+		"name4": "Billy Godfrey"
+	},
+	"private":true,
+	"dependencies": {
+		"express": "2.5.x",
+		"jade": ">= 0.27.x",
+		"bcrypt": ">= 0.5.x",
+		"mongodb": ">= 1.1.x",
+		"mocha": "1.6.x",
+		"emailjs": ">= 0.3.x"
+	},
+	"engines": {
+		"node": "0.8.x",
+		"npm": "1.1.x"
+	}
+}
